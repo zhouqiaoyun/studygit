@@ -1,35 +1,35 @@
-һֱ��ѧϰgit����һֱ������ѧ�ᡣ��Ҫ��������Ŀ�к����õ�������û�м�ס��
-��������ԣ���һ��������Ĺ�˾�����ǹ�˾����git�ύ���롣���ԣ��Ҵ�������ѧϰһ��git��֪ʶ��
+一直想学习git，但一直都没时间去学。主要是真正项目中很少用到，命令没有记住。
+最近在面试，有一家我中意的公司，他们公司是用git提交代码。所以，我打算深入学习一下git的知识。
 
 creat a new repository 
 
-git init         ��ʼ���ֿ�
-git add .        ����������һ��û�з�Ӧ��
-git add �ļ���
-git commit -m '����'   
-git remote add origin http://github.com/zhouqiaoyun/**.git  �ύ���ֿ�
-git push -u origin master  ׼���ύ������
+git init         初始化仓库
+git add .        添加整个（一般没有反应）
+git add 文件名
+git commit -m '描述'   
+git remote add origin http://github.com/zhouqiaoyun/**.git  提交到仓库
+git push -u origin master  准备提交到网络
 
-*���û������������û��������Ը�����ʾ���ã�Ȼ����ȥִ�����������
+*如果没有设置邮箱和用户名，可以根据提示设置，然后再去执行上面的命令
 
-�����û��������� 
+设置用户名和邮箱 
      git  config  --global user.name "zhouqiaoyun"
      git  config  --global user.email "1234567@qq.com"
 
 
-����յ���˾����git��ȡ��Ŀ
+如果刚到公司，用git获取项目
 
-*����Ҫ֪����˾��git��ַ��http://192.168.������/**.git
+*首先要知道公司的git地址：http://192.168.。。。/**.git
 
-1.Ҫ����Ӧ��Ȩ�ޣ�Ҳ�����˺ź�����
-2.clone���룬�ŵ��ļ���   git clone http://....(��˾git��ַ)
-3.���clone�ɹ���git log ���Բ鿴�ύ��ʷ
-4.git remote -v �г���ϸ��Ϣ
-5.git branch �鿴���ط�֮ git branch -a  �鿴����+Զ��
-6.git checkout -b �·�֮ origin /��֮����
-����Զ�̴��������л���֮���ڱ��ش�����Զ�����Ӧ�ģ���÷�֮����һ�£�
-7.npm install   ���Ű�װ
+1.要有相应的权限，也就是账号和密码
+2.clone代码，放到文件夹   git clone http://....(公司git地址)
+3.如果clone成功，git log 可以查看提交历史
+4.git remote -v 列出详细信息
+5.git branch 查看本地分之 git branch -a  查看本地+远程
+6.git checkout -b 新分之 origin /分之名字
+（从远程创建本地切换分之，在本地创建和远程相对应的，最好分之名字一致）
+7.npm install   等着安装
   
 
-*�Ƽ���ѩ�����վѧϰgit��
+*推荐廖雪峰的网站学习git：
 http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/0013743256916071d599b3aed534aaab22a0db6c4e07fd0000
